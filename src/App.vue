@@ -1,16 +1,27 @@
-<template>
-<HelloWorld msg="Welcome to my Vue.js App , {{ message }}" />
 
+<template>
+  <button @click="count++">
+    {{ count }}
+  </button>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+import {
+  ref
+} from 'vue'
+const count = ref(0)
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld,
-    ref,
-  }
+  setup() {
+    return {
+      count
+    }
+  },
+  // components: {
+  //   HelloWorld,
+  // }
+
 }
 </script>
