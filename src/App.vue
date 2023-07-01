@@ -1,8 +1,11 @@
 
 <template>
+<div>
   <button @click="count++">
     {{ count }}
   </button>
+  <Title />
+</div>
 </template>
 
 <script>
@@ -10,6 +13,7 @@
 import {
   ref
 } from 'vue'
+import Title from './components/Title.vue'
 const count = ref(0)
 
 export default {
@@ -19,9 +23,9 @@ export default {
       count
     }
   },
-  // components: {
-  //   HelloWorld,
-  // }
+  components: {
+    Title,
+  }
 
 }
 </script>
