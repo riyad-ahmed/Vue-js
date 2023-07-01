@@ -1,9 +1,21 @@
 <template>
-  <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, atque tempora odit deserunt sint dignissimos itaque vero placeat omnis similique ut laborum dicta earum beatae incidunt inventore architecto iste repudiandae?</h1>
+  <h1>Email : {{email}}</h1>
 </template>
 
 <script>
 export default {
   name: 'Title',
+  data ()
+  {
+    return {
+      email: 'riyadahmed5764@gmail.com'
+    }
+  }
 }
 </script>
+
+<style scoped>
+h1 {
+  color: red;
+}
+</style>
