@@ -1,19 +1,20 @@
-
 <template>
-<div>
+<div class="body">
+  <Header />
   <button @click="count++">
     {{ count }}
   </button>
   <Title />
+
 </div>
 </template>
 
 <script>
-
 import {
   ref
 } from 'vue'
 import Title from './components/Title.vue'
+import Header from './components/Header.vue'
 const count = ref(0)
 
 export default {
@@ -25,7 +26,16 @@ export default {
   },
   components: {
     Title,
+    Header,
   }
 
 }
 </script>
+
+<style scoped>
+.body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+</style>
