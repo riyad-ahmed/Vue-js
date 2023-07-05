@@ -15,6 +15,10 @@
   <h1>sumData : {{list().email}}</h1>
   <button v-on:click="message('hello')">click me</button>
   <button v-on:dblclick="msgtow('hello')">double click me</button>
+  <div>
+    <input id="input" type="text" v-model="count">
+    <p>{{count}}</p>
+  </div>
 </div>
 </template>
 
@@ -27,6 +31,7 @@ export default {
       Num: '555',
       age: '25',
       lists: [],
+      count: 0,
     }
   },
   methods: {
@@ -63,5 +68,10 @@ p {
   color: blue;
   font-size: 30px;
   font-weight: bold;
+}
+#input{
+  margin-top: 2rem;
+  width: 200px;
+  height: 25px;
 }
 </style>
