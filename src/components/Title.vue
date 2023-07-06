@@ -7,10 +7,10 @@
   <p style="color:gray">API CALL</p>
 
   <div v-for="item in lists" :key="item.id" style="border:2px solid red">
-    <h1>{{item.title}}</h1>
-    <p>{{item.completed}}</p>
+    <h1 id="inar-data">{{item.title}}</h1>
+    <p id="inar-data">{{item.completed}}</p>
   </div>
-  <p>API closed</p>
+  <p style="color:gray">API closed</p>
   <h1>sumData : {{list()}}</h1>
   <h1>sumData : {{list().email}}</h1>
   <button v-on:click="message('hello')">click me</button>
@@ -73,5 +73,11 @@ p {
   margin-top: 2rem;
   width: 200px;
   height: 25px;
+}
+#inar-data{
+  font-size: 15px;
+  color: black;
+  font-weight: bold;
+
 }
 </style>
