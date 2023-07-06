@@ -15,6 +15,7 @@ import {
 } from 'vue'
 import Title from './components/Title.vue'
 import Header from './components/Header.vue'
+import Forms from './components/Forms.vue'
 const count = ref(0)
 
 export default {
@@ -27,6 +28,7 @@ export default {
   components: {
     Title,
     Header,
+    Forms,
   }
 
 }

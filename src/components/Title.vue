@@ -48,6 +48,9 @@ export default {
       alert('double clicked')
     },
 
+    getConsole() {
+      console.log(this.email, this.password)
+    },
     // call api form free api 
     async getdata() {
       const res = await fetch('https://jsonplaceholder.typicode.com/todos?_limit=2')
@@ -69,12 +72,14 @@ p {
   font-size: 30px;
   font-weight: bold;
 }
-#input{
+
+#input {
   margin-top: 2rem;
   width: 200px;
   height: 25px;
 }
-#inar-data{
+
+#inar-data {
   font-size: 15px;
   color: black;
   font-weight: bold;
