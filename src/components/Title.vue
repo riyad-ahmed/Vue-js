@@ -48,9 +48,6 @@ export default {
       alert('double clicked')
     },
 
-    getConsole() {
-      console.log(this.email, this.password)
-    },
     // call api form free api 
     async getdata() {
       const res = await fetch('https://jsonplaceholder.typicode.com/todos?_limit=2')

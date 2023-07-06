@@ -6,6 +6,8 @@
   </button>
   <Title />
 
+  <Forms />
+
 </div>
 </template>
 

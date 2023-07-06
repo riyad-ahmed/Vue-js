@@ -7,7 +7,7 @@
   <br>
   <br>
   <div>
-    <button v-on:click="getConsole()">Submit</button>
+    <button v-on:click="getdata()">Submit</button>
   </div>
 </div>
 </template>
@@ -22,7 +22,7 @@ export default {
     }
   },
   methods: {
-    getConsole() {
+    getdata() {
       console.log(this.email, this.password)
     }
   }
