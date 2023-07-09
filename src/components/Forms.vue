@@ -9,6 +9,16 @@
   <div>
     <button v-on:click="getdata()">Submit</button>
   </div>
+  <div>
+    <h2>Technology</h2>
+    <label for="java">Java</label>
+    <input type="checkbox" value="java" v-model="technology" id="java">
+    <label for="php">PHP</label>
+    <input type="checkbox" value="php" v-model="technology" id="php">
+    <label for="node">node</label>
+    <input type="checkbox" value="node" v-model="technology" id="node">
+    <h1>Technology : {{technology}}</h1>
+  </div>
 </div>
 </template>
 
@@ -19,11 +29,17 @@ export default {
     return {
       email: null,
       password: null,
+      technology: [],
     }
   },
   methods: {
     getdata() {
       console.log(this.email, this.password)
+    }
+  },
+  watch: {
+    technology() {
+      console.log(this.technology)
     }
   }
 }
